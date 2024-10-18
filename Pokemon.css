@@ -1,0 +1,177 @@
+
+body {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+#result {
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 450px;
+    background: white;
+    box-shadow: 2px 2px 20px;
+    text-align: center;
+    animation: fade-in 0.6s ease forwards;
+    background-color: #fff;
+}
+
+#result #pokemonname {
+    margin: 10px auto 30px auto;
+}
+
+#imageDisplay {
+    margin-top: -40px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+}
+
+.search input {
+    margin: 45px 0px;
+    width: 20%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.search button {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    outline: 0;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border: 1px solid rgb(0, 30, 255);
+}
+
+.search i {
+    color:black;
+}
+
+.search button:hover {
+    background: rgb(0, 170, 255);
+}
+
+.link {
+    margin: 25px auto;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgb(226, 226, 226);
+}
+
+.link a button:hover {
+    background: rgb(206, 205, 205);
+}
+
+#error-message {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+    display: none;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity:0
+    }
+    25% {
+        opacity:0.25
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#properties {
+    margin-top: -25px;
+    width: 100%;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* Stack properties vertically */
+    row-gap: 10px; /* Add spacing between each property */
+}
+
+#properties p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+#properties p:nth-child(9) {
+    grid-area: 5 / 1 / span 2 / span 2;
+}
+
+#properties p:nth-child(9) audio {
+    
+    margin: 10px auto 5px auto;
+}
+
+
+@media only screen and (max-width: 600px) { 
+    #result {
+        width: 95%;
+        height: 100%;
+    }
+    .search input {
+        width:60%;
+    }
+}
+
+#properties p:nth-child(1) { 
+    color: red;
+}
+
+#properties p:nth-child(2) { 
+    color: red; 
+}
+
+#properties p:nth-child(5) { 
+    color: #1976d2; 
+}
+
+#properties p:nth-child(6) {
+    color: #1976d2; 
+}
+
+#properties p:nth-child(3) { 
+    color: #f57c00; 
+}
+
+#properties p:nth-child(4) { 
+    color: #f57c00; 
+}
+
+#properties p:nth-child(7) { 
+    color: #388e3c; 
+}
+
+#properties p:nth-child(8) { 
+    color: #388e3c; 
+}

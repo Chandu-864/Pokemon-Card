@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel = "stylesheet" href = "Pokemon.css">
+    <script src="https://kit.fontawesome.com/0222b3c263.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="search">
+        <input type="text" name="pokemon" id="pokemon" placeholder="Enter the Pokemon name to fetch data">
+        <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="error-message"></div>
+    <div id="result">
+        <p id = "pokemonname">PIKACHU</p>
+        <img src= "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon" id = "imageDisplay">
+        <div id="properties">
+            <p><span>Ability-1: Static</span></p>
+            <p><span>Ability-2: Iightning-rod</span></p>
+            <p><span>Type: Electric</span></p>
+            <p><span>Move: mega-punch</span></p>
+            <p><span>Height: 4 dm</span></p>
+            <p><span>Weight: 60 hg</span></p>
+            <p><span>Base Experience: 112</span></p>
+            <p><span>Number of Moves: 105</span></p>
+            <p><span><audio src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg" id = "pokemon-audio" controls></audio></span></p>
+        </div>
+    </div>
+    <div class="link">
+        <a href="Pokemons.pdf" target="_blank"><button>View Pokemons</button></a>
+    </div>
+
+    <script src="Pokemon.js"></script>
+</body>
+</html>
